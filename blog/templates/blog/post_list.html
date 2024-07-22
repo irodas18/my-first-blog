@@ -1,22 +1,312 @@
-<html>
-    <head>
-        <title>Django Ivan</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Blog</a></h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnitas Rosi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .modal-dialog {
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4"><a href="/" class="text-decoration-none">Menu: Carnitas Rosi</a></h1>
+
+        <div class="row">
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.c69dd8f5ae8dc0476c82ef7c04c5a4a3?rik=XK7Qetjmb2Camw&pid=ImgRaw&r=0" alt="Imagen de Bistec" data-toggle="modal" data-target="#modalBistec">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto1">Bistec</a></h5>
+                        <p class="card-text">Bistec de res de alta calidad, ideal para asar a la parrilla con la familia. Precio: $150.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.118b2ada6c8cd620e718a104dcd9dabd?rik=RvcN1cDke%2fC4gg&pid=ImgRaw&r=0" alt="Imagen de Pechuga de Pollo" data-toggle="modal" data-target="#modalPechugaPollo">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto2">Pechuga de Pollo</a></h5>
+                        <p class="card-text">Pechuga de pollo fresca, perfecta para una alimentación saludable. Precio: $100.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.FvGKvMfqyJDZiyx7LqJ-oQHaE7?rs=1&pid=ImgDetMain" alt="Imagen de Chuleta" data-toggle="modal" data-target="#modalChuleta">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto3">Chuleta</a></h5>
+                        <p class="card-text">Chuleta de cerdo jugosa y tierna, ideal para freír o asar. Precio: $120.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <div class="row">
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.666e0be4ae32bfefa2fcbf0243f7c145?rik=HxhWlxcwhe96Vw&pid=ImgRaw&r=0" alt="Imagen de Lomo de Cerdo" data-toggle="modal" data-target="#modalLomoCerdo">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto4">Lomo de Cerdo</a></h5>
+                        <p class="card-text">Lomo de cerdo magro y sabroso, perfecto para asar. Precio: $140.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.hRLFeQLaJIHEOak3iDQyOgHaE8?rs=1&pid=ImgDetMain" alt="Imagen de Costilla" data-toggle="modal" data-target="#modalCostilla">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto5">Costilla</a></h5>
+                        <p class="card-text">Costilla de cerdo suculenta, perfecta para barbacoas. Precio: $130.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.JJNpi3yZctNbCgLVNv4SegHaE8?rs=1&pid=ImgDetMain" alt="Imagen de Coca-Cola" data-toggle="modal" data-target="#modalCocaCola">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto6">Coca-Cola</a></h5>
+                        <p class="card-text">Refresco Coca-Cola de 500 ml, el sabor original que todos disfrutan. Precio: $15.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        <div class="row">
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.4Dzl29aX27om3BlRSSxkFgHaHa?rs=1&pid=ImgDetMain" alt="Imagen de Pepsi" data-toggle="modal" data-target="#modalPepsi">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto7">Pepsi</a></h5>
+                        <p class="card-text">Refresco Pepsi de 500 ml, una alternativa refrescante. Precio: $14.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.9496d1358181c372acf3858cbf448fd7?rik=vgCN6l1M1bLbLw&pid=ImgRaw&r=0" alt="Imagen de Agua Mineral" data-toggle="modal" data-target="#modalAguaMineral">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto8">Agua Mineral</a></h5>
+                        <p class="card-text">Agua mineral de 500 ml, ideal para mantenerse hidratado. Precio: $10.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TIJTmG53xBTLAHqkGSV1dAHaFR?rs=1&pid=ImgDetMain" alt="Imagen de Jugo de Naranja" data-toggle="modal" data-target="#modalJugoNaranja">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto9">Jugo de Naranja</a></h5>
+                        <p class="card-text">Jugo de naranja 100% natural, botella de 500 ml. Precio: $20.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.b9e759019a7665acce51c8caed35d95b?rik=MN8pxjuxwarnUw&pid=ImgRaw&r=0" alt="Imagen de Cerveza" data-toggle="modal" data-target="#modalCerveza">
+                    <div class="card-body">
+                        <p class="card-text">Publicado: 14.06.2024, 12:14</p>
+                        <h5 class="card-title"><a href="/producto10">Cerveza</a></h5>
+                        <p class="card-text">Cerveza artesanal de 355 ml, refrescante y con un sabor único. Precio: $25.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="modal fade" id="modalBistec" tabindex="-1" role="dialog" aria-labelledby="modalBistecLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBistecLabel">Bistec</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/R.c69dd8f5ae8dc0476c82ef7c04c5a4a3?rik=XK7Qetjmb2Camw&pid=ImgRaw&r=0" alt="Imagen de Bistec" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPechugaPollo" tabindex="-1" role="dialog" aria-labelledby="modalPechugaPolloLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPechugaPolloLabel">Pechuga de Pollo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/R.118b2ada6c8cd620e718a104dcd9dabd?rik=RvcN1cDke%2fC4gg&pid=ImgRaw&r=0" alt="Imagen de Pechuga de Pollo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalChuleta" tabindex="-1" role="dialog" aria-labelledby="modalChuletaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalChuletaLabel">Chuleta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/OIP.FvGKvMfqyJDZiyx7LqJ-oQHaE7?rs=1&pid=ImgDetMain" alt="Imagen de Chuleta" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLomoCerdo" tabindex="-1" role="dialog" aria-labelledby="modalLomoCerdoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLomoCerdoLabel">Lomo de Cerdo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/R.666e0be4ae32bfefa2fcbf0243f7c145?rik=HxhWlxcwhe96Vw&pid=ImgRaw&r=0" alt="Imagen de Lomo de Cerdo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCostilla" tabindex="-1" role="dialog" aria-labelledby="modalCostillaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCostillaLabel">Costilla</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/OIP.hRLFeQLaJIHEOak3iDQyOgHaE8?rs=1&pid=ImgDetMain" alt="Imagen de Costilla" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCocaCola" tabindex="-1" role="dialog" aria-labelledby="modalCocaColaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCocaColaLabel">Coca-Cola</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/OIP.JJNpi3yZctNbCgLVNv4SegHaE8?rs=1&pid=ImgDetMain" alt="Imagen de Coca-Cola" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPepsi" tabindex="-1" role="dialog" aria-labelledby="modalPepsiLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPepsiLabel">Pepsi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/OIP.4Dzl29aX27om3BlRSSxkFgHaHa?rs=1&pid=ImgDetMain" alt="Imagen de Pepsi" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAguaMineral" tabindex="-1" role="dialog" aria-labelledby="modalAguaMineralLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAguaMineralLabel">Agua Mineral</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/R.9496d1358181c372acf3858cbf448fd7?rik=vgCN6l1M1bLbLw&pid=ImgRaw&r=0" alt="Imagen de Agua Mineral" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalJugoNaranja" tabindex="-1" role="dialog" aria-labelledby="modalJugoNaranjaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalJugoNaranjaLabel">Jugo de Naranja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/OIP.TIJTmG53xBTLAHqkGSV1dAHaFR?rs=1&pid=ImgDetMain" alt="Imagen de Jugo de Naranja" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCerveza" tabindex="-1" role="dialog" aria-labelledby="modalCervezaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCervezaLabel">Cerveza</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://th.bing.com/th/id/R.b9e759019a7665acce51c8caed35d95b?rik=MN8pxjuxwarnUw&pid=ImgRaw&r=0" alt="Imagen de Cerveza" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
