@@ -22,14 +22,22 @@
         .modal-dialog {
             max-width: 90%;
         }
+        .category-title {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="text-center my-4"><a href="/" class="text-decoration-none">Productos Electrónicos</a></h1>
 
+        <!-- Laptops -->
+        <div class="category-title">
+            <h2>Laptops</h2>
+        </div>
         <div class="row">
-            <!-- Producto 1 -->
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://th.bing.com/th/id/R.f4d5d73455a9bc4943fdfdfffa21f5fe?rik=waR0aiES20r%2bOw&riu=http%3a%2f%2fwww.thinkingtech.in%2fwp-content%2fuploads%2f2017%2f12%2fDell-XPS-13-Laptop-1.png&ehk=zuGnqS3Uc51eo8De7Gsu6pdXZLUmcZrvdyHkzfunZes%3d&risl=&pid=ImgRaw&r=0" alt="Dell XPS 13" data-toggle="modal" data-target="#modalXPS13">
@@ -39,7 +47,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Producto 2 -->
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://i5.walmartimages.com/asr/cd6502a8-ece1-4f52-8648-5d7a5e9b564c_1.f43d905640766dc174d4e3d3501edd88.jpeg" alt="Apple MacBook Air" data-toggle="modal" data-target="#modalMacBookAir">
@@ -49,20 +56,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Producto 3 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/a86c30d7-cd3a-492c-936d-7675a47017eb_2.d3d1bb5def6db02a3fc623a1e785b8ef.jpeg" alt="HP Pavilion" data-toggle="modal" data-target="#modalHPPavilion">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto3">HP Pavilion</a></h5>
-                        <p class="card-text">Desktop HP Pavilion, Modelo TG01-1022. Precio: $799.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Producto 4 -->
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/lenovo_24684xu_thinkpad_l430_2468_4xu_14_995781.jpg" alt="Lenovo ThinkPad X1 Carbon" data-toggle="modal" data-target="#modalThinkPad">
@@ -72,83 +65,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Producto 5 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/35f4520a-14e5-45ea-aa85-fbe0e811af15_1.66411296ef21d6d07b153aa459b4e7d7.jpeg" alt="Dell Inspiron" data-toggle="modal" data-target="#modalInspiron">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto5">Dell Inspiron</a></h5>
-                        <p class="card-text">Desktop Dell Inspiron, Modelo 3880. Precio: $699.99</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 6 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://img.ebyrcdn.net/252900-349219-800.jpg" alt="Acer Aspire 5" data-toggle="modal" data-target="#modalAspire5">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto6">Acer Aspire 5</a></h5>
-                        <p class="card-text">Laptop Acer Aspire 5, Modelo A515-55-56VK. Precio: $549.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Producto 7 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/R.397a11975ddb63f5b1718e7744676044?rik=UtR8He2f6vx%2fEw&pid=ImgRaw&r=0" alt="PlayStation 5" data-toggle="modal" data-target="#modalPS5">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto7">PlayStation 5</a></h5>
-                        <p class="card-text">Console PlayStation 5, Modelo CFI-1015A. Precio: $499.99</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 8 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ffc9A_ZPTJPNtDUJTmdJOAAAAA?rs=1&pid=ImgDetMain" alt="Xbox Series X" data-toggle="modal" data-target="#modalXboxSeriesX">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto8">Xbox Series X</a></h5>
-                        <p class="card-text">Console Xbox Series X, Modelo RRT-00001. Precio: $499.99</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 9 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://img.gkbcdn.com/s3/p/2018-11-29/razer-blackwidow-elite-rgb-gaming-mechanical-keyboard-black-1571980632521.jpg" alt="Razer BlackWidow Elite" data-toggle="modal" data-target="#modalBlackWidow">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto9">Razer BlackWidow Elite</a></h5>
-                        <p class="card-text">Gaming Equipment Razer BlackWidow Elite, Modelo RZ03-02620100-R3U1. Precio: $129.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Producto 10 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.P1KKG-Zh4BovWauUyqiVWQHaEk?rs=1&pid=ImgDetMain" alt="Logitech G502 HERO" data-toggle="modal" data-target="#modalG502">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto10">Logitech G502 HERO</a></h5>
-                        <p class="card-text">Gaming Equipment Logitech G502 HERO, Modelo 910-005469. Precio: $49.99</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 11 -->
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://dlcdnwebimgs.asus.com/gain/368F6703-684B-4AAD-9E3C-364B391546BF/w1000/h732" alt="ASUS ROG Strix G15 Gaming Laptop" data-toggle="modal" data-target="#modalROGStrix">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto11">ASUS ROG Strix G15 Gaming Laptop</a></h5>
-                        <p class="card-text">Gaming Equipment ASUS ROG Strix G15 Gaming Laptop, Modelo G512LW-ES76. Precio: $1149.99</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 12 -->
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://ae.tejar.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/m/i/microsoft_surface_laptop_4_-_intel_core_i5_512gb_8gb_-_13.5_inch_-_ice_blue_-_1tejar_2.jpg" alt="Microsoft Surface Laptop 4" data-toggle="modal" data-target="#modalSurfaceLaptop">
@@ -160,8 +76,29 @@
             </div>
         </div>
 
+        <!-- Desktops -->
+        <div class="category-title">
+            <h2>Desktops</h2>
+        </div>
         <div class="row">
-            <!-- Producto 13 -->
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/a86c30d7-cd3a-492c-936d-7675a47017eb_2.d3d1bb5def6db02a3fc623a1e785b8ef.jpeg" alt="HP Pavilion" data-toggle="modal" data-target="#modalHPPavilion">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto3">HP Pavilion</a></h5>
+                        <p class="card-text">Desktop HP Pavilion, Modelo TG01-1022. Precio: $799.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/35f4520a-14e5-45ea-aa85-fbe0e811af15_1.66411296ef21d6d07b153aa459b4e7d7.jpeg" alt="Dell Inspiron" data-toggle="modal" data-target="#modalInspiron">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto5">Dell Inspiron</a></h5>
+                        <p class="card-text">Desktop Dell Inspiron, Modelo 3880. Precio: $699.99</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://i5.walmartimages.com/asr/3ae170cf-df43-46b7-91b8-ab43e6ae03a4.faebdf6ac077ed8fdba605d3624678fb.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="iMac 24-inch" data-toggle="modal" data-target="#modalIMac">
@@ -171,7 +108,56 @@
                     </div>
                 </div>
             </div>
-            <!-- Producto 14 -->
+        </div>
+
+        <!-- Videojuegos -->
+        <div class="category-title">
+            <h2>Videojuegos</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/R.397a11975ddb63f5b1718e7744676044?rik=UtR8He2f6vx%2fEw&pid=ImgRaw&r=0" alt="PlayStation 5" data-toggle="modal" data-target="#modalPS5">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto7">PlayStation 5</a></h5>
+                        <p class="card-text">Console PlayStation 5, Modelo CFI-1015A. Precio: $499.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ffc9A_ZPTJPNtDUJTmdJOAAAAA?rs=1&pid=ImgDetMain" alt="Xbox Series X" data-toggle="modal" data-target="#modalXboxSeriesX">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto8">Xbox Series X</a></h5>
+                        <p class="card-text">Console Xbox Series X, Modelo RRT-00001. Precio: $499.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipos Gaming -->
+        <div class="category-title">
+            <h2>Equipos Gaming</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://img.gkbcdn.com/s3/p/2018-11-29/razer-blackwidow-elite-rgb-gaming-mechanical-keyboard-black-1571980632521.jpg" alt="Razer BlackWidow Elite" data-toggle="modal" data-target="#modalBlackWidow">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto9">Razer BlackWidow Elite</a></h5>
+                        <p class="card-text">Gaming Equipment Razer BlackWidow Elite, Modelo RZ03-02620100-R3U1. Precio: $129.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.P1KKG-Zh4BovWauUyqiVWQHaEk?rs=1&pid=ImgDetMain" alt="Logitech G502 HERO" data-toggle="modal" data-target="#modalG502">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/producto10">Logitech G502 HERO</a></h5>
+                        <p class="card-text">Gaming Equipment Logitech G502 HERO, Modelo 910-005469. Precio: $49.99</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://i5.walmartimages.com/asr/69d17322-eead-49aa-93db-2dbd7588e17a.4525bc28ed8c76f7a71ddbf3f8ffc7f4.jpeg" alt="Acer Nitro 5" data-toggle="modal" data-target="#modalNitro5">
@@ -181,7 +167,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Producto 15 -->
+        </div>
+
+        <!-- Monitores -->
+        <div class="category-title">
+            <h2>Monitores</h2>
+        </div>
+        <div class="row">
             <div class="col-md-4 product">
                 <div class="card">
                     <img class="card-img-top" src="https://th.bing.com/th/id/OIP.niJSu5Q4g2pI4ID62JPz1AHaE2?w=1000&h=656&rs=1&pid=ImgDetMain" alt="Eve Spectrum Monitor" data-toggle="modal" data-target="#modalSpectrum">
@@ -250,4 +242,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
