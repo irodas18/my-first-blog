@@ -6,26 +6,71 @@
   <title>4 Caminos - Promoción de Locales</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff;
+    }
     .hero-section {
       background-image: url('https://scontent.fgua1-3.fna.fbcdn.net/v/t1.6435-9/78538419_2501215886581757_1589756619623759872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=fWWsEiv3p_kQ7kNvgGJh275&_nc_ht=scontent.fgua1-3.fna&oh=00_AYDdjOmi4bqatOXR0iNl60zwHuLrqER_rN0UEudQDCty1A&oe=66CFAD3D');
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 100px 0;
+      padding: 150px 0;
       text-align: center;
     }
-
+    .hero-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 1.5rem;
+    }
     .info-section {
       padding: 50px 0;
     }
-
     .info-section .card img {
-      height: 200px;
+      height: 250px;
       object-fit: cover;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      color: #007bff;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">4 Caminos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <header class="hero-section">
     <div class="container">
@@ -34,7 +79,7 @@
     </div>
   </header>
 
-  <section class="info-section">
+  <section id="servicios" class="info-section">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -68,15 +113,49 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-4">
-    <p class="mb-0">&copy; 2024 4 Caminos. Todos los derechos reservados.</p>
+  <section id="contacto" class="info-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Contacto</h3>
+          <p>Para más información sobre nuestros locales, por favor contáctanos:</p>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> info@4caminos.com</li>
+            <li><strong>Teléfono:</strong> +123 456 7890</li>
+            <li><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Formulario de Contacto</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 4 Caminos. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2
+
 
 
 
