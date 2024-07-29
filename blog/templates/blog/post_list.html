@@ -1,246 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Electrónicos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        body {
-            padding: 20px;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        .card img {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .card img:hover {
-            transform: scale(1.05);
-        }
-        .modal-dialog {
-            max-width: 90%;
-        }
-        .category-title {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Caminos - Promoción de Locales</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('https://scontent.fgua1-3.fna.fbcdn.net/v/t1.6435-9/78538419_2501215886581757_1589756619623759872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=fWWsEiv3p_kQ7kNvgGJh275&_nc_ht=scontent.fgua1-3.fna&oh=00_AYDdjOmi4bqatOXR0iNl60zwHuLrqER_rN0UEudQDCty1A&oe=66CFAD3D');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .info-section {
+      padding: 50px 0;
+    }
+
+    .info-section .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
+
+  <header class="hero-section">
     <div class="container">
-        <h1 class="text-center my-4"><a href="/" class="text-decoration-none">Productos Electrónicos</a></h1>
-
-        <!-- Laptops -->
-        <div class="category-title">
-            <h2>Laptops</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/R.f4d5d73455a9bc4943fdfdfffa21f5fe?rik=waR0aiES20r%2bOw&riu=http%3a%2f%2fwww.thinkingtech.in%2fwp-content%2fuploads%2f2017%2f12%2fDell-XPS-13-Laptop-1.png&ehk=zuGnqS3Uc51eo8De7Gsu6pdXZLUmcZrvdyHkzfunZes%3d&risl=&pid=ImgRaw&r=0" alt="Dell XPS 13" data-toggle="modal" data-target="#modalXPS13">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto1">Dell XPS 13</a></h5>
-                        <p class="card-text">Laptop Dell XPS 13, Modelo XPS9370. Precio: $999.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/cd6502a8-ece1-4f52-8648-5d7a5e9b564c_1.f43d905640766dc174d4e3d3501edd88.jpeg" alt="Apple MacBook Air" data-toggle="modal" data-target="#modalMacBookAir">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto2">Apple MacBook Air</a></h5>
-                        <p class="card-text">Laptop Apple MacBook Air, Modelo M1. Precio: $1099.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/lenovo_24684xu_thinkpad_l430_2468_4xu_14_995781.jpg" alt="Lenovo ThinkPad X1 Carbon" data-toggle="modal" data-target="#modalThinkPad">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto4">Lenovo ThinkPad X1 Carbon</a></h5>
-                        <p class="card-text">Laptop Lenovo ThinkPad X1 Carbon, Modelo Gen9. Precio: $1249.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://ae.tejar.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/m/i/microsoft_surface_laptop_4_-_intel_core_i5_512gb_8gb_-_13.5_inch_-_ice_blue_-_1tejar_2.jpg" alt="Microsoft Surface Laptop 4" data-toggle="modal" data-target="#modalSurfaceLaptop">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto12">Microsoft Surface Laptop 4</a></h5>
-                        <p class="card-text">Laptop Microsoft Surface Laptop 4, Modelo 5IM-00001. Precio: $999.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Desktops -->
-        <div class="category-title">
-            <h2>Desktops</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/a86c30d7-cd3a-492c-936d-7675a47017eb_2.d3d1bb5def6db02a3fc623a1e785b8ef.jpeg" alt="HP Pavilion" data-toggle="modal" data-target="#modalHPPavilion">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto3">HP Pavilion</a></h5>
-                        <p class="card-text">Desktop HP Pavilion, Modelo TG01-1022. Precio: $799.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/35f4520a-14e5-45ea-aa85-fbe0e811af15_1.66411296ef21d6d07b153aa459b4e7d7.jpeg" alt="Dell Inspiron" data-toggle="modal" data-target="#modalInspiron">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto5">Dell Inspiron</a></h5>
-                        <p class="card-text">Desktop Dell Inspiron, Modelo 3880. Precio: $699.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/3ae170cf-df43-46b7-91b8-ab43e6ae03a4.faebdf6ac077ed8fdba605d3624678fb.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="iMac 24-inch" data-toggle="modal" data-target="#modalIMac">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto13">iMac 24-inch</a></h5>
-                        <p class="card-text">Desktop iMac 24-inch, Modelo MGTF3LL/A. Precio: $1299.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Videojuegos -->
-        <div class="category-title">
-            <h2>Videojuegos</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/R.397a11975ddb63f5b1718e7744676044?rik=UtR8He2f6vx%2fEw&pid=ImgRaw&r=0" alt="PlayStation 5" data-toggle="modal" data-target="#modalPS5">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto7">PlayStation 5</a></h5>
-                        <p class="card-text">Console PlayStation 5, Modelo CFI-1015A. Precio: $499.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ffc9A_ZPTJPNtDUJTmdJOAAAAA?rs=1&pid=ImgDetMain" alt="Xbox Series X" data-toggle="modal" data-target="#modalXboxSeriesX">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto8">Xbox Series X</a></h5>
-                        <p class="card-text">Console Xbox Series X, Modelo RRT-00001. Precio: $499.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Equipos Gaming -->
-        <div class="category-title">
-            <h2>Equipos Gaming</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://img.gkbcdn.com/s3/p/2018-11-29/razer-blackwidow-elite-rgb-gaming-mechanical-keyboard-black-1571980632521.jpg" alt="Razer BlackWidow Elite" data-toggle="modal" data-target="#modalBlackWidow">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto9">Razer BlackWidow Elite</a></h5>
-                        <p class="card-text">Gaming Equipment Razer BlackWidow Elite, Modelo RZ03-02620100-R3U1. Precio: $129.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.P1KKG-Zh4BovWauUyqiVWQHaEk?rs=1&pid=ImgDetMain" alt="Logitech G502 HERO" data-toggle="modal" data-target="#modalG502">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto10">Logitech G502 HERO</a></h5>
-                        <p class="card-text">Gaming Equipment Logitech G502 HERO, Modelo 910-005469. Precio: $49.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://i5.walmartimages.com/asr/69d17322-eead-49aa-93db-2dbd7588e17a.4525bc28ed8c76f7a71ddbf3f8ffc7f4.jpeg" alt="Acer Nitro 5" data-toggle="modal" data-target="#modalNitro5">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto14">Acer Nitro 5</a></h5>
-                        <p class="card-text">Gaming Equipment Acer Nitro 5, Modelo AN515-55-53E5. Precio: $799.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Monitores -->
-        <div class="category-title">
-            <h2>Monitores</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 product">
-                <div class="card">
-                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.niJSu5Q4g2pI4ID62JPz1AHaE2?w=1000&h=656&rs=1&pid=ImgDetMain" alt="Eve Spectrum Monitor" data-toggle="modal" data-target="#modalSpectrum">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/producto15">Eve Spectrum Monitor</a></h5>
-                        <p class="card-text">Monitor Eve Spectrum, Modelo ES07D03. Precio: $699.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Templates -->
-        <div class="modal fade" id="modalXPS13" tabindex="-1" role="dialog" aria-labelledby="modalXPS13Label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalXPS13Label">Dell XPS 13</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://example.com/laptop.jpg" class="img-fluid" alt="Dell XPS 13">
-                        <p>Detalle del producto Dell XPS 13, Modelo XPS9370. Precio: $999.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalMacBookAir" tabindex="-1" role="dialog" aria-labelledby="modalMacBookAirLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalMacBookAirLabel">Apple MacBook Air</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://example.com/macbook.jpg" class="img-fluid" alt="Apple MacBook Air">
-                        <p>Detalle del producto Apple MacBook Air, Modelo M1. Precio: $1099.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalHPPavilion" tabindex="-1" role="dialog" aria-labelledby="modalHPPavilionLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalHPPavilionLabel">HP Pavilion</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://example.com/hp.jpg" class="img-fluid" alt="HP Pavilion">
-                        <p>Detalle del producto Desktop HP Pavilion, Modelo TG01-1022. Precio: $799.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Añadir más modales aquí para los otros productos -->
-
+      <h1 class="display-4">Bienvenidos a 4 Caminos</h1>
+      <p class="lead">Promocionando los mejores locales con gran afluencia y excelente personal</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </header>
+
+  <section class="info-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://scontent.fgua1-2.fna.fbcdn.net/v/t39.30808-6/448264019_7568959453140683_8949057883488755374_n.jpg?stp=cp6_dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kfY1zFX2OpwQ7kNvgHHocwA&_nc_ht=scontent.fgua1-2.fna&oh=00_AYA1jp-H8AqYdqcducu_b0DLQebYRDAsKDCEhtz6lyP7lA&oe=66ADE6BC" class="card-img-top" alt="Personal de 4 Caminos">
+            <div class="card-body">
+              <h5 class="card-title">Nuestro Personal</h5>
+              <p class="card-text">Contamos con un equipo de profesionales capacitados para brindarte el mejor servicio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://scontent.fgua1-3.fna.fbcdn.net/v/t1.6435-9/78538419_2501215886581757_1589756619623759872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=fWWsEiv3p_kQ7kNvgGJh275&_nc_ht=scontent.fgua1-3.fna&oh=00_AYDdjOmi4bqatOXR0iNl60zwHuLrqER_rN0UEudQDCty1A&oe=66CFAD3D" class="card-img-top" alt="Afluencia en 4 Caminos">
+            <div class="card-body">
+              <h5 class="card-title">Gran Afluencia</h5>
+              <p class="card-text">Nuestros locales están ubicados en áreas con alta afluencia de personas, asegurando el éxito de tu negocio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://scontent.fgua1-2.fna.fbcdn.net/v/t39.30808-6/448264019_7568959453140683_8949057883488755374_n.jpg?stp=cp6_dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kfY1zFX2OpwQ7kNvgHHocwA&_nc_ht=scontent.fgua1-2.fna&oh=00_AYA1jp-H8AqYdqcducu_b0DLQebYRDAsKDCEhtz6lyP7lA&oe=66ADE6BC" class="card-img-top" alt="Locales de 4 Caminos">
+            <div class="card-body">
+              <h5 class="card-title">Nuestros Locales</h5>
+              <p class="card-text">Locales modernos y funcionales, perfectos para cualquier tipo de negocio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2024 4 Caminos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
