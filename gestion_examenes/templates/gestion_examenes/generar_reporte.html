@@ -1,0 +1,21 @@
+{% extends 'gestion_examenes/base.html' %}
+
+{% block content %}
+<h1>Generar Reporte</h1>
+<form method="get">
+    <div class="form-group">
+        <label for="fecha_inicio">Fecha Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+    </div>
+    <div class="form-group">
+        <label for="fecha_fin">Fecha Fin:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" required>
+    </div>
+    <button type="submit" class="btn-submit">Generar Reporte</button>
+</form>
+
+{% if total_recaudado is not None %}
+    <h2>Reporte del {{ fecha_inicio }} al {{ fecha_fin }}</h2>
+    <p>Total Recaudado: ${{ total_recaudado }}</p>
+{% endif %}
+{% endblock %}
